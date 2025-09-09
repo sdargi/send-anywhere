@@ -1,0 +1,18 @@
+# Ignore node modules
+node_modules/
+
+# Ignore uploaded files
+server/uploads/
+
+# Ignore database file
+server/files.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
