@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Send‑Anywhere Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>File Share</h1>
+    <section class="card">
+      <h2>Upload</h2>
+      <div id="drop" class="drop">
+        <input id="file" type="file" />
+        <p>Drag & drop a file here or click to choose</p>
+      </div>
+      <div class="row">
+        <label>Expires (minutes): <input id="expires" type="number" min="0" value="1440" /></label>
+        <label>Max downloads: <input id="maxDl" type="number" min="0" value="0" /></label>
+      </div>
+      <button id="uploadBtn">Upload</button>
+      <div id="progressWrap" class="hidden">
+        <div id="progressBar"></div>
+        <span id="progressText">0%</span>
+      </div>
+      <div id="result" class="result"></div>
+    </section>
+
+    <section class="card">
+      <h2>Download</h2>
+      <div class="row">
+        <input id="codeInput" type="text" placeholder="Enter 6‑digit code" maxlength="6" />
+        <button id="checkBtn">Check</button>
+      </div>
+      <div id="meta" class="meta"></div>
+      <button id="downloadBtn" class="hidden">Download</button>
+    </section>
+
+    <footer>
+      <small>Self‑hosted demo. Not affiliated with Send Anywhere.</small>
+    </footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

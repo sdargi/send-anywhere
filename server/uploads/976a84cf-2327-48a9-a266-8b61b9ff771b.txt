@@ -1,0 +1,12 @@
+<Context path="/ark_infra" reloadable="true">
+    <Resource name="jdbc/ark_infra" 
+              auth="Container"
+              type="javax.sql.DataSource"
+              driverClassName="com.mysql.cj.jdbc.Driver"
+              url="jdbc:mysql://localhost:3306/ark_infra"
+              username="root"
+              password="P@$$word864"
+              maxTotal="20"
+              maxIdle="5"
+              maxWaitMillis="10000"/>
+</Context>
